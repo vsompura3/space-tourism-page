@@ -35,7 +35,7 @@ function changeTabPanel(e) {
   const targetPanel = targetTab.getAttribute('aria-controls');
   const targetImage = targetTab.getAttribute('data-image');
   const tabContainer = targetTab.parentNode;
-  const mainContainer = tabContainer.parentNode;
+  const mainContainer = tabContainer.closest('#main');
 
   tabContainer
     .querySelector('[aria-selected="true"]')
